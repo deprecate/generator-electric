@@ -1,13 +1,12 @@
 'use strict';
 
+var _ = require('lodash');
 var chalk = require('chalk');
-var minimist = require('minimist');
-var path = require('path');
 var updateNotifier = require('update-notifier');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
 	initializing: function() {
 		var pkg = require('../../package.json');
 
@@ -22,27 +21,24 @@ module.exports = yeoman.generators.Base.extend({
 	},
 
 	prompting: function() {
-		// Have Yeoman greet the user.
 		this.log(yosay(this._yosay));
 
 		this._prompt();
 	},
 
 	configuring: function() {
-		//
+		this.destinationRoot(this.projectId);
 	},
 
 	writing: {
 		app: function() {
-			this.template('_package.json', 'package.json', this);
-
-			this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
-
+			this.template('package.json', 'package.json', this);
 			this.template('gulpfile.js', 'gulpfile.js', this);
+			this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
 		},
 
 		projectfiles: function() {
-
+			this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
 		}
 	},
 
@@ -56,8 +52,40 @@ module.exports = yeoman.generators.Base.extend({
 		}
 	},
 
-	_prompt: function() {
+	_afterPrompt: function(done, props) {
+		_.assign(this, props);
 
+		this.gitName = this.user.git.name();
+
+		done();
+	},
+
+	_getPrompts: function() {
+		var prompts = [
+			{
+				default: 'My Site',
+				message: 'What would you like to call your project?',
+				name: 'projectName',
+				type: 'input'
+			},
+			{
+				default: function(answers) {
+					return _.kebabCase(_.deburr(answers.projectName || ''));
+				},
+				message: 'Would you like to use this as the project id? (determines folder name)',
+				name: 'projectId',
+				type: 'input'
+			}
+		];
+
+		return prompts;
+	},
+
+	_prompt: function() {
+		var done = this.async();
+
+		this.prompt(this._getPrompts())
+			.then(this._afterPrompt.bind(this, done));
 	},
 
 	_yosay: 'Welcome to the splendid ' + chalk.red('Metal SSG') + ' generator!'

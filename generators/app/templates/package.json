@@ -1,9 +1,9 @@
 {
-  "name": "docs-starter-kit",
+  "name": "<%= projectId %>",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Robert-Frampton/docs-starter-kit"
+    "url": "https://github.com/<%= gitName %>/<%= projectId %>"
   },
   "dependencies": {
     "metal-ssg-components": "^0.0.3",

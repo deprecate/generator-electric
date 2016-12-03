@@ -11,6 +11,7 @@
     "url": "https://github.com/Robert-Frampton/generator-metal-ssg"
   },
   "keywords": [
+    "yeoman-generator",
     "metal",
     "static",
     "site",
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/Robert-Frampton/generator-metal-ssg",
   "dependencies": {
     "chalk": "^1.1.3",
+    "lodash": "^4.17.2",
     "update-notifier": "^1.0.2",
     "yeoman-generator": "^0.24.1",
     "yosay": "^1.2.1"
