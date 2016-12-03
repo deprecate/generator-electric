@@ -1,0 +1,33 @@
+{
+  "name": "generator-metal-ssg",
+  "version": "0.0.0",
+  "description": "Yeoman generator for creating documentation site using metal-ssg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Robert-Frampton/generator-metal-ssg"
+  },
+  "keywords": [
+    "metal",
+    "static",
+    "site",
+    "generator",
+    "yeoman",
+    "soy"
+  ],
+  "author": "Rob Frampton <rob.g.frampton@gmail.com> (https://github.com/Robert-Frampton)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robert-Frampton/generator-metal-ssg/issues"
+  },
+  "homepage": "https://github.com/Robert-Frampton/generator-metal-ssg",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "update-notifier": "^1.0.2",
+    "yeoman-generator": "^0.24.1",
+    "yosay": "^1.2.1"
+  }
+}
