@@ -2,9 +2,10 @@
 
 /**
  * @param content
- * @param? page
- * @param? scripts
+ * @param page
  * @param serialized
+ * @param site
+ * @param? scripts
  */
 {template .render private="true"}
 <!DOCTYPE html>
@@ -15,7 +16,7 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="description" content="{$page.description ?: ''}">
 
-		<title>{$page.title} - Awesome Project</title>
+		<title>{$page.title} - {$site.title}</title>
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Mono">
 		<link rel="stylesheet" href="/styles/main.css">
