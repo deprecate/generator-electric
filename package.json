@@ -1,7 +1,7 @@
 {
   "name": "generator-metal-ssg",
   "version": "0.0.0",
-  "description": "Yeoman generator for creating documentation site using metal-ssg.",
+  "description": "Yeoman generator for creating documentation sites using metal-ssg.",
   "main": "index.js",
   "scripts": {
     "test": "test"
