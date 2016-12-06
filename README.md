@@ -24,5 +24,8 @@ yo metal-ssg
 ```
 
 Once the boilerplate has been created `npm` will install the dependendencies.
+
+Run `gulp` to generate the site and start a development server.
+
 Please see [metal-ssg](https://github.com/Robert-Frampton/metal-ssg) for more
 documentation.
