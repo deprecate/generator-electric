@@ -1,10 +1,11 @@
-const gulp = require('gulp');
-const connect = require('gulp-connect');
-const sass = require('gulp-sass');
-const ghPages = require('gulp-gh-pages');
-const ssg = require('metal-ssg');
+'use strict';
 
+const connect = require('gulp-connect');
+const ghPages = require('gulp-gh-pages');
+const gulp = require('gulp');
 const runSequence = require('run-sequence');
+const sass = require('gulp-sass');
+const ssg = require('metal-ssg');
 
 ssg.registerTasks({
 	gulp: gulp,
@@ -52,6 +53,7 @@ gulp.task('deploy', ['default'], () => {
 // Watch -----------------------------------------------------------------------
 
 gulp.task('watch', () => {
+	gulp.watch('src/**/*.+(md|soy|js|fm)', ['generate']);
 	gulp.watch('src/styles/**/*.scss', ['css']);
 });
 
@@ -62,5 +64,5 @@ gulp.task('build', (callback) => {
 });
 
 gulp.task('default', (callback) => {
-	runSequence('build', 'server', callback);
+	runSequence('build', 'server', 'watch', callback);
 });
