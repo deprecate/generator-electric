@@ -52,6 +52,7 @@
 	padding: 20px;
 }
 
+.autocomplete .list-group-item.active .autocomplete-link,
 .autocomplete-link:hover,
 .autocomplete-link:focus {
 	background: rgba($accent, .1);
