@@ -39,6 +39,8 @@ module.exports = yeoman.Base.extend({
 
 		projectfiles: function() {
 			this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
+
+			this.template('src/site.json', 'src/site.json', this);
 		}
 	},
 
