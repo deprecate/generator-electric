@@ -12,7 +12,7 @@ title: "Documentation"
 	{call main.render data="all"}
 		{param elementClasses: 'docs' /}
 		{param content kind="html"}
-			{call SSGSidebar.render}
+			{call guide.sidebar}
 				{param section: $site.index.children[0] /}
 			{/call}
 

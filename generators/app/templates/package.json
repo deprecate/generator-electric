@@ -7,7 +7,7 @@
     "url": "https://github.com/<%= gitName %>/<%= projectId %>"
   },
   "dependencies": {
-    "metal-ssg-components": "^0.0.5",
+    "metal-ssg-components": "^0.2.1",
     "westyle": "wedeploy/westyle#master"
   },
   "devDependencies": {
