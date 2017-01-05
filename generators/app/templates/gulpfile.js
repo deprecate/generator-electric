@@ -1,15 +1,15 @@
 'use strict';
 
 const connect = require('gulp-connect');
+const electric = require('electric');
 const ghPages = require('gulp-gh-pages');
 const gulp = require('gulp');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
-const ssg = require('metal-ssg');
 
-ssg.registerTasks({
+electric.registerTasks({
 	gulp: gulp,
-	plugins: ['metal-ssg-components']
+	plugins: ['electric-components']
 });
 
 // CSS -------------------------------------------------------------------------
