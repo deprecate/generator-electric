@@ -31,5 +31,14 @@
 		margin-left: 8px;
 		position: relative;
 		top: 10px;
+		display: none;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.topbar-logo-link {
+		.by {
+			display: block;
+		}
 	}
 }
