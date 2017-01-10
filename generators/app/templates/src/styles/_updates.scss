@@ -150,9 +150,7 @@
 }
 
 @media (min-width: $screen-md-min) { 
-	margin-top: 105px;
-}
-
-@media (min-width: 1024px) { 
-	margin-top: 105px;
+	.updates {
+		margin-top: 105px;
+	}
 }
