@@ -12,7 +12,7 @@
 
 .updates {
 	background: rgba($primary, .03);
-	margin-top: 105px;
+	margin-top: 55px;
 }
 
 .update {
@@ -109,9 +109,6 @@
 }
 
 @media screen and (max-width: 960px) {
-	.updates {
-		margin-top: 55px;
-	}
 	.update {
 		padding: 0;
 
