@@ -30,21 +30,21 @@
 }
 
 @media (min-width: $screen-sm-min) {
-  .header-title {
-    font-size: 99px;
-  }
+	.header-title {
+		font-size: 99px;
+	}
 
-  .header-subtitle {
-    font-size: 24px;
-  }
+	.header-subtitle {
+		font-size: 24px;
+	}
 
-  .header {
-    padding: 75px 0 0;
-  }
+	.header {
+		padding: 75px 0 0;
+	}
 
-  .gh-btns {
-  	margin-top: 75px;
-  }
+	.gh-btns {
+		margin-top: 75px;
+	}
 }
 
 @media (min-width: $screen-md-min) {

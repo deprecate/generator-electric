@@ -1,11 +1,3 @@
-@media (min-width: $screen-md-min) {
-	.topbar {
-		position: fixed;
-		top: 0;
-		z-index: 1;
-	}
-}
-
 .topbar-logo-link {
 	.icon {
 		color: $accent;
@@ -37,6 +29,14 @@
 
 .topbar-item {
 	margin: 0 10px;
+}
+
+@media (min-width: $screen-md-min) {
+	.topbar {
+		position: fixed;
+		top: 0;
+		z-index: 1;
+	}
 }
 
 @media (min-width: $screen-sm-min) {
