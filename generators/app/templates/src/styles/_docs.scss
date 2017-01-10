@@ -226,17 +226,13 @@
 }
 
 .docs-home-top-title {
-	color: rgba($primary, .8);
-	font-size: 36px;
-	font-weight: 300;
+	font-family: $font-family-secondary-bold;
+	color: rgba($primary, .9);
+	font-size: 57px;
 	letter-spacing: -1px;
 	line-height: 48px;
 	margin: 80px 0 56px;
 	text-align: center;
-}
-
-.docs-home-top-title span {
-	font-weight: 700;
 }
 
 .docs-home-top-description {

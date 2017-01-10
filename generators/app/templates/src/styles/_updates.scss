@@ -10,6 +10,11 @@
 	display: flex;
 }
 
+.updates {
+	background: rgba($primary, .03);
+	margin-top: 105px;
+}
+
 .update {
 	.read-more {
 		margin-top: 20px;
@@ -104,6 +109,9 @@
 }
 
 @media screen and (max-width: 960px) {
+	.updates {
+		margin-top: 55px;
+	}
 	.update {
 		padding: 0;
 
@@ -137,5 +145,14 @@
 		border-width: 0;
 		margin: 0 auto;
 		text-decoration: underline;
+		background: transparent;
 	}
+}
+
+@media (min-width: $screen-md-min) { 
+	margin-top: 105px;
+}
+
+@media (min-width: 1024px) { 
+	margin-top: 105px;
 }
