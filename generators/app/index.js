@@ -90,5 +90,5 @@ module.exports = yeoman.Base.extend({
 			.then(this._afterPrompt.bind(this, done));
 	},
 
-	_yosay: 'Welcome to the splendid ' + chalk.red('Metal SSG') + ' generator!'
+	_yosay: 'Welcome to the splendid ' + chalk.red('Electric') + ' generator!'
 });
