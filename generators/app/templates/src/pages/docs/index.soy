@@ -13,7 +13,7 @@ title: "Docs"
 		{param elementClasses: 'docs' /}
 		{param content kind="html"}
 			{call SideBar.render}
-				{param section: $site.index.children[0] /}
+				{param section: $site.index.children[1] /}
 			{/call}
 
 			{call .topics data="all" /}
@@ -38,7 +38,6 @@ title: "Docs"
 					{call ElectricSearch.render}
 						{param action: '/docs' /}
 						{param placeholder: 'Search Docs' /}
-						{param section: $site.index.children[0] /}
 					{/call}
 				</div>
 			</div>
@@ -56,7 +55,7 @@ title: "Docs"
 				<div class="row">
 					<div class="col-md-13 col-md-offset-3 col-xs-16">
 						<div class="row">
-							{foreach $topic in $site.index.children[0].children}
+							{foreach $topic in $site.index.children[1].children}
 								{if not $topic.hidden}
 									<div class="col-md-6 col-xs-16">
 										<a class="topic radial-out" href="{$topic.url}">

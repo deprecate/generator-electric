@@ -1,0 +1,50 @@
+{namespace blog}
+
+/**
+ *
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			<div class="blog">
+				{call .mainPost data="all" /}
+				{call .olderPosts data="all" /}
+			</div>
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * @param content
+ * @param page
+ */
+{template .mainPost}
+	<article class="container-blog">
+		<header class="docs-top">
+			<span class="docs-top-date">By {$page.author} <span class="date">| {$page.date}</span></span>
+
+			<h1 class="docs-top-title">{$page.title}</h1>
+		</header>
+
+		<div class="content">
+			{$content}
+		</div>
+	</article>
+{/template}
+
+/**
+ * @param site
+ */
+{template .olderPosts}
+	<div class="posts-list">
+		{foreach $page in $site.index.children[0].children}
+			<div class="post-item container-blog">
+				<a class="post-item__link" href="{$page.url}">
+					<span class="post-item__date">By {$page.author} <span class="date">| {$page.date}</span></span>
+
+					<h1 class="post-item__title">{$page.title}</h1>
+				</a>
+			</div>
+		{/foreach}
+	</div>
+{/template}
