@@ -7,7 +7,6 @@
     "url": "https://github.com/<%= gitName %>/<%= projectId %>"
   },
   "dependencies": {
-    "electric-components": "^1.0.0",
     "westyle": "wedeploy/westyle#master"
   },
   "devDependencies": {
