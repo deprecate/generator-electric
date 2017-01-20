@@ -19,11 +19,11 @@
  * @param page
  */
 {template .mainPost}
-	<article class="container-blog">
-		<header class="docs-top">
-			<span class="docs-top-date">By {$page.author} <span class="date">| {$page.date}</span></span>
+	<article class="container">
+		<header>
+			<small>By {$page.author} <span>| {$page.date}</span></small>
 
-			<h1 class="docs-top-title">{$page.title}</h1>
+			<h3>{$page.title}</h3>
 		</header>
 
 		<div class="content">
@@ -37,14 +37,15 @@
  */
 {template .olderPosts}
 	<div class="posts-list">
-		{foreach $page in $site.index.children[0].children}
-			<div class="post-item container-blog">
-				<a class="post-item__link" href="{$page.url}">
-					<span class="post-item__date">By {$page.author} <span class="date">| {$page.date}</span></span>
-
-					<h1 class="post-item__title">{$page.title}</h1>
-				</a>
-			</div>
-		{/foreach}
+		<div class="container">
+			{foreach $page in $site.index.children[0].children}
+				<div class="post-item container-blog">
+					<a class="post-item__link" href="{$page.url}">
+						<small>By {$page.author} <span>| {$page.date}</span></small>
+						<h4 class="post-item__title">{$page.title}</h4>
+					</a>
+				</div>
+			{/foreach}
+		</div>
 	</div>
 {/template}
