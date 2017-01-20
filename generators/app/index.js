@@ -4,7 +4,6 @@ var _ = require('lodash');
 var chalk = require('chalk');
 var updateNotifier = require('update-notifier');
 var yeoman = require('yeoman-generator');
-var yosay = require('yosay');
 
 module.exports = yeoman.Base.extend({
 	initializing: function() {
@@ -21,8 +20,6 @@ module.exports = yeoman.Base.extend({
 	},
 
 	prompting: function() {
-		this.log(yosay(this._yosay));
-
 		this._prompt();
 	},
 
@@ -88,7 +85,5 @@ module.exports = yeoman.Base.extend({
 
 		this.prompt(this._getPrompts())
 			.then(this._afterPrompt.bind(this, done));
-	},
-
-	_yosay: 'Welcome to the splendid ' + chalk.red('Electric') + ' generator!'
+	}
 });
