@@ -23,7 +23,7 @@
   "author": "Rob Frampton <rob.g.frampton@gmail.com> (https://github.com/Robert-Frampton)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/liferay/generator-electric/issues"
+    "url": "https://github.com/wedeploy/generator-electric/issues"
   },
   "homepage": "http://electricjs.com",
   "dependencies": {
