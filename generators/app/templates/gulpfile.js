@@ -6,7 +6,7 @@ const ghPages = require('gulp-gh-pages');
 const gulp = require('gulp');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
-const westyle = require('westyle');
+const marble = require('marble');
 
 electric.registerTasks({
 	gulp: gulp,
@@ -18,7 +18,7 @@ electric.registerTasks({
 gulp.task('css', () => {
 	return gulp.src('src/styles/**/*.scss')
 		.pipe(sass({
-			includePaths: ['node_modules', westyle.src]
+			includePaths: ['node_modules', marble.src]
 		}))
 		.pipe(gulp.dest('dist/styles'));
 });
@@ -26,7 +26,7 @@ gulp.task('css', () => {
 // Fonts -----------------------------------------------------------------------
 
 gulp.task('fonts', () => {
-	return gulp.src('node_modules/westyle/build/fonts/**')
+	return gulp.src('node_modules/marble/build/fonts/**')
 		.pipe(gulp.dest('dist/fonts'));
 });
 
