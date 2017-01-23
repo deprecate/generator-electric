@@ -1,1 +1,3 @@
+generators/app/templates/dist/
+generators/app/templates/temp/
 node_modules/
