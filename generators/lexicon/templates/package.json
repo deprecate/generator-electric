@@ -7,7 +7,7 @@
     "url": "https://github.com/<%= gitName %>/<%= projectId %>"
   },
   "dependencies": {
-    "marble": "wedeploy/marble#master"
+    "lexicon-ux": "^1.0.15"
   },
   "devDependencies": {
     "electric": "^1.1.0",
