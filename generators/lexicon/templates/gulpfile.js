@@ -4,9 +4,9 @@ const connect = require('gulp-connect');
 const electric = require('electric');
 const ghPages = require('gulp-gh-pages');
 const gulp = require('gulp');
-const lexicon = require('lexicon-ux');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
+const marble = require('marble');
 
 electric.registerTasks({
 	gulp: gulp,
@@ -18,9 +18,16 @@ electric.registerTasks({
 gulp.task('css', () => {
 	return gulp.src('src/styles/**/*.scss')
 		.pipe(sass({
-			includePaths: ['node_modules', lexicon.includePaths]
+			includePaths: ['node_modules', marble.src]
 		}))
 		.pipe(gulp.dest('dist/styles'));
+});
+
+// Fonts -----------------------------------------------------------------------
+
+gulp.task('fonts', () => {
+	return gulp.src('node_modules/marble/build/fonts/**')
+		.pipe(gulp.dest('dist/fonts'));
 });
 
 // Server ----------------------------------------------------------------------
@@ -56,7 +63,7 @@ gulp.task('watch', () => {
 // Build -----------------------------------------------------------------------
 
 gulp.task('build', (callback) => {
-	runSequence('generate', ['css', 'wedeploy'], callback);
+	runSequence('generate', ['css', 'fonts', 'wedeploy'], callback);
 });
 
 gulp.task('default', (callback) => {
