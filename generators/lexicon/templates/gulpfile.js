@@ -5,6 +5,7 @@ const electric = require('electric');
 const ghPages = require('gulp-gh-pages');
 const gulp = require('gulp');
 const lexicon = require('lexicon-ux');
+const path = require('path');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 
@@ -46,6 +47,16 @@ gulp.task('deploy', ['default'], () => {
 		}));
 });
 
+// Lexicon ---------------------------------------------------------------------
+
+gulp.task('vendor:lexicon', () => {
+	return gulp.src([
+			path.join(lexicon.buildDir, 'images', 'icons', '*'),
+			path.join(lexicon.srcDir, 'js', 'svg4everybody.js')
+		])
+		.pipe(gulp.dest('dist/vendor/lexicon'));
+});
+
 // Watch -----------------------------------------------------------------------
 
 gulp.task('watch', () => {
@@ -60,5 +71,5 @@ gulp.task('build', (callback) => {
 });
 
 gulp.task('default', (callback) => {
-	runSequence('build', 'server', 'watch', callback);
+	runSequence('vendor:lexicon', 'build', 'server', 'watch', callback);
 });

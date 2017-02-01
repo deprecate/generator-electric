@@ -1,6 +1,6 @@
 ---
 description: "Develop description."
-icon: "code-file"
+icon: "embed"
 layout: "guide"
 title: "Develop"
 ---
