@@ -23,26 +23,24 @@
  */
 {template .guide}
 	<div class="sidebar-offset">
-		<header class="guide-header">
+		<header>
 			<div class="container-fluid">
-				<h1 class="guide-header-title">{$page.title} Guide</h1>
+				<h1>{$page.title} Guide</h1>
 			</div>
 		</header>
 
 		<div class="container-fluid">
-			<div class="docs-guide row">
-				<div class="docs-content col-xs-12 col-md-9">
+			<div class="row">
+				<div class="col-xs-12 col-md-9">
 					{$content}
 
 					{call .feedback data="all" /}
 				</div>
 
 				<nav class="col-xs-12 col-md-offset-2 col-md-5">
-					<div class="docs-nav-container">
-						{call ElectricReadingProgress.render}
-							{param elementClasses: 'docs-nav' /}
-						{/call}
-					</div>
+					{call ElectricReadingProgress.render}
+						{param elementClasses: 'docs-nav' /}
+					{/call}
 				</nav>
 			</div>
 		</div>
