@@ -1,6 +1,6 @@
 ---
 description: "Build description."
-icon: "pencil"
+icon: "hammer"
 layout: "guide"
 title: "Build"
 ---

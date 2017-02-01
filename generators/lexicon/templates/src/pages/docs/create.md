@@ -1,6 +1,6 @@
 ---
 description: "Create description."
-icon: "plus"
+icon: "flash"
 layout: "guide"
 title: "Create"
 ---

@@ -1,6 +1,6 @@
 ---
 description: "Deploy description."
-icon: "repository"
+icon: "cloud"
 layout: "guide"
 title: "Deploy"
 ---
