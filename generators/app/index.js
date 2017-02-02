@@ -74,6 +74,12 @@ module.exports = yeoman.Base.extend({
 				message: 'Would you like to use this as the project id? (determines folder name)',
 				name: 'projectId',
 				type: 'input'
+			},
+			{
+				default: 'UA-37033501-5',
+				message: 'What is your Google Analytics tracking id?',
+				name: 'googleAnalytics',
+				type: 'input'
 			}
 		];
 
