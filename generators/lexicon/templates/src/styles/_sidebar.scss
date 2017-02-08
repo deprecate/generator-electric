@@ -1,7 +1,15 @@
 .sidebar-offset {
-	margin-left: 320px;
+	@media (min-width: $grid-float-breakpoint) {
+		margin-left: 320px;
+	}
 }
 
 .sidenav-fixed.sidenav-menu-slider {
-	top: 60px;
+	margin-top: 48px;
+
+	@media (min-width: $grid-float-breakpoint) {
+		margin-top: 60px;
+		visibility: visible;
+		width: 320px;
+	}
 }

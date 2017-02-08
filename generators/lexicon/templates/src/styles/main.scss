@@ -9,5 +9,9 @@
 @import "sidebar";
 
 body {
-	margin-top: 60px;
+	margin-top: 48px;
+
+	@media (min-width: $grid-float-breakpoint) {
+		margin-top: 60px;
+	}
 }
