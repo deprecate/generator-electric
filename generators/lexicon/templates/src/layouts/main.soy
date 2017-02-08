@@ -38,11 +38,21 @@
  * @param site
  */
 {template .menu}
-	{call ElectricNavigation.render}
-		{param depth: 1 /}
-		{param elementClasses: 'nav navbar-nav navbar-right' /}
-		{param linkClasses: '' /}
-		{param listItemClasses: '' /}
-		{param section: $site.index /}
-	{/call}
+	<div class="navbar-header navbar-header-right">
+		<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbarCollapseSite" data-toggle="collapse" type="button">
+			<svg class="lexicon-icon">
+				<use xlink:href="/vendor/lexicon/icons.svg#bars" />
+			</svg>
+		</button>
+	</div>
+
+	<div aria-expanded="false" class="navbar-collapse collapse" id="navbarCollapseSite">
+		{call ElectricNavigation.render}
+			{param depth: 1 /}
+			{param elementClasses: 'nav navbar-nav navbar-right' /}
+			{param linkClasses: '' /}
+			{param listItemClasses: '' /}
+			{param section: $site.index /}
+		{/call}
+	</div>
 {/template}
