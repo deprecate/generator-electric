@@ -8,9 +8,11 @@ import templates from './Sidebar.soy';
 
 class Sidebar extends Component {
 	attached() {
+		Toggler.CSS_EXPANDED = 'open'; /* Until metal-toggler can manage classenames on states */
+
 		new Toggler({
 			content: '.sidebar-toggler-content',
-			header: '.sidebar-header'
+			header: '.sidebar-toggler'
 		});
 	}
 };

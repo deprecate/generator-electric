@@ -4,9 +4,28 @@
  * @param section
  */
 {template .render}
-	<nav class="sidenav-fixed sidenav-menu-slider open">
+	<div class="toolbar navbar navbar-default visible-xs-block">
+		<div class="toolbar-group">
+			<div class="toolbar-group-content">
+				<a class="sidebar-toggler text-default" href="javascript:">
+					<svg class="lexicon-icon icon-monospaced">
+						<use xlink:href="/vendor/lexicon/icons.svg#product-menu-closed" />
+					</svg>
+					Docs menu
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<nav class="sidenav-fixed sidenav-menu-slider sidebar-toggler-content">
 		<div class="sidebar sidebar-default sidenav-menu">
 			<div class="sidebar-header">
+				<span class="sidebar-toggler pull-right visible-xs-block">
+					<svg class="lexicon-icon">
+						<use xlink:href="/vendor/lexicon/icons.svg#times" />
+					</svg>
+				</span>
+
 				<div class="sidebar-search">
 					{call ElectricSearchAutocomplete.render}
 						{param maxResults: 3 /}
