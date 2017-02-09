@@ -10,7 +10,7 @@ const marble = require('marble');
 
 electric.registerTasks({
 	gulp: gulp,
-	plugins: ['electric-components']
+	plugins: ['electric-marble-components']
 });
 
 // CSS -------------------------------------------------------------------------
