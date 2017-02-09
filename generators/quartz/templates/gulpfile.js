@@ -11,7 +11,7 @@ const sass = require('gulp-sass');
 
 electric.registerTasks({
 	gulp: gulp,
-	plugins: ['electric-components']
+	plugins: ['electric-quartz-components']
 });
 
 // CSS -------------------------------------------------------------------------
