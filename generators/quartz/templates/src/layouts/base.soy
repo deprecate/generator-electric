@@ -29,12 +29,16 @@
 
 		<link rel="stylesheet" href="/styles/main.css">
 	</head>
-	<body>
-		<!-- inject:metal:js -->
-			<div>
-				{$content}
-			</div>
-		<!-- endinject -->
+	<body data-senna>
+		<div data-senna-surface id="wrapper">
+			<div class="senna-loading-bar"></div>
+
+			<!-- inject:metal:js -->
+				<div>
+					{$content}
+				</div>
+			<!-- endinject -->
+		</div>
 
 		{if $scripts}
 			{foreach $script in $scripts}
@@ -42,7 +46,7 @@
 			{/foreach}
 		{/if}
 
-		<!-- inject:codemirror:js -->
+		<!-- inject:vendor:js -->
 		<!-- endinject -->
 	</body>
 </html>
