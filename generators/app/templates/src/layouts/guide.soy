@@ -34,7 +34,7 @@
 				<div class="docs-content col-xs-16 col-md-9">
 					{$content}
 
-					{call .feedback data="all" /}
+					{call .contribute data="all" /}
 				</div>
 
 				<nav class="col-xs-16 col-md-offset-2 col-md-5">
@@ -53,23 +53,13 @@
  * @param page
  * @param site
  */
-{template .feedback}
-	<div>
-		<div class="guide-feedback">
-			<p>Was this section helpful?</p>
-
-			<button class="btn btn-accent guide-feedback-btn guide-feedback-btn-yes">Yes</button>
-			<button class="btn btn-accent guide-feedback-btn guide-feedback-btn-no">No</button>
+{template .contribute}
+	<div class="guide-github">
+		<div class="guide-github-img">
+			<span class="icon-16-github"></span>
 		</div>
-
-		<div class="guide-github">
-			<div class="guide-github-img">
-				<span class="icon-16-github"></span>
-			</div>
-
-			<div class="guide-github-text">
-				<p>Contribute on Github! <a href="{$site.repo ?: ''}/tree/master/{$page.srcFilePath}" class="docs-github-link" target="_blank">Edit this section</a>.</p>
-			</div>
+		<div class="guide-github-text">
+			<p>Contribute on Github! <a href="{$site.repo ?: ''}/tree/master/{$page.srcFilePath}" class="docs-github-link" target="_blank">Edit this section</a>.</p>
 		</div>
 	</div>
 {/template}
