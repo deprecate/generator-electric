@@ -1,9 +1,9 @@
 ---
-author: "Author"
-date: "February 02, 2017"
-description: "Blog description."
-layout: "blog"
 title: "Markdown Post"
+description: "Markdown Post description"
+date: "February 02, 2017"
+author: "Author Name"
+layout: "blog"
 ---
 
 <article>
