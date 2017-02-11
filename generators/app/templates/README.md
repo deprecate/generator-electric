@@ -13,7 +13,7 @@ node -v && npm -v
 2. Install our global dependencies:
 
 	```sh
-[sudo] npm i -g gulp
+[sudo] npm i -g gulp yo
 	```
 
 3. Install our local dependencies:
