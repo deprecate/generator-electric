@@ -2,7 +2,7 @@
   "name": "<%= projectId %>",
   "version": "0.0.0",
   "private": true,
-  "repository": "<%= gitName %>/<%= projectId %>",
+  "repository": "<%= repository %>",
   "dependencies": {
     "marble": "^2.3.0"
   },

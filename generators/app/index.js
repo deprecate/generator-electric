@@ -55,12 +55,12 @@ module.exports = yeoman.Base.extend({
 	_afterPrompt: function(done, props) {
 		_.assign(this, props);
 
-		this.gitName = this.user.git.name();
-
 		done();
 	},
 
 	_getPrompts: function() {
+		var user = this.user;
+
 		var prompts = [
 			{
 				default: 'My Site',
@@ -74,6 +74,21 @@ module.exports = yeoman.Base.extend({
 				},
 				message: 'Would you like to use this as the project id? (determines folder name)',
 				name: 'projectId',
+				type: 'input'
+			},
+			{
+				default: function(answers) {
+					var done = this.async();
+
+					user.github.username(function(err, res) {
+						var username = res ? res : 'my-user';
+						var repository = username + '/' + answers.projectId;
+
+						done(null, repository);
+					});
+				},
+				message: 'What GitHub repository are you going to use?',
+				name: 'repository',
 				type: 'input'
 			},
 			{
