@@ -3,7 +3,7 @@
   "name": "<%= projectId %>",
   "version": "0.0.0",
   "dependencies": {
-    "marble": "^2.3.0"
+    "marble": "~2.3.0"
   },
   "devDependencies": {
     "electric": "~1.2.0",
