@@ -88,7 +88,7 @@ module.exports = yeoman.Base.extend({
 					});
 				},
 				message: 'What GitHub repository are you going to use?',
-				name: 'repository',
+				name: 'githubRepo',
 				type: 'input'
 			},
 			{

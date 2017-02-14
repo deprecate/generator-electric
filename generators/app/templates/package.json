@@ -1,8 +1,7 @@
 {
+  "private": true,
   "name": "<%= projectId %>",
   "version": "0.0.0",
-  "private": true,
-  "repository": "<%= repository %>",
   "dependencies": {
     "marble": "^2.3.0"
   },
