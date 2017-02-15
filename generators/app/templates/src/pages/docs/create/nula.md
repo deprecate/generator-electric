@@ -7,7 +7,7 @@ weight: 3
 
 ###### Viva Forevis aptent taciti sociosqu ad litora torquent Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Pra lá , depois divoltis porris, paradis. Delegadis gente finis, bibendum egestas augue arcu ut est.
 
-<article id="article1">
+<article id="1">
 
 ## Lorem ipsum dolor sit amet
 
@@ -27,7 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article2">
+<article id="2">
 
 ## Lorem ipsum dolor sit amet
 
@@ -41,7 +41,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article3">
+<article id="3">
 
 ## Lorem ipsum dolor sit amet
 

@@ -7,7 +7,7 @@ weight: 1
 
 ###### Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Mé faiz elementum girarzis, nisi eros vermeio. Suco de cevadiss deixa as pessoas mais interessantiss. Cevadis im ampola pa arma uma pindureta.
 
-<article id="article1">
+<article id="1">
 
 ## Lorem ipsum dolor sit amet
 
@@ -23,7 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article2">
+<article id="2">
 
 ## Lorem ipsum dolor sit amet
 
@@ -37,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article3">
+<article id="3">
 
 ## Lorem ipsum dolor sit amet
 

@@ -8,7 +8,7 @@ weight: 1
 
 ###### Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. A ordem dos tratores não altera o pão duris Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Ta deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
 
-<article id="article1">
+<article id="1">
 
 ## Lorem ipsum dolor sit amet
 
@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article2">
+<article id="2">
 
 ## Lorem ipsum dolor sit amet
 
@@ -42,7 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article3">
+<article id="3">
 
 ## Lorem ipsum dolor sit amet
 

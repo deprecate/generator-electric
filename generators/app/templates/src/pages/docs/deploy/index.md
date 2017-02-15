@@ -8,7 +8,7 @@ weight: 4
 
 ###### Sapien in monti palavris qui num significa nadis i pareci latim. in elementis mé pra quem é amistosis quis leo. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss. Ta deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
 
-<article id="article1">
+<article id="1">
 
 ## Lorem ipsum dolor sit amet
 
@@ -26,7 +26,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article2">
+<article id="2">
 
 ## Lorem ipsum dolor sit amet
 
@@ -40,7 +40,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article3">
+<article id="3">
 
 ## Lorem ipsum dolor sit amet
 

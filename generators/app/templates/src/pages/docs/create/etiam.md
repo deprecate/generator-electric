@@ -7,7 +7,7 @@ weight: 2
 
 ###### Quem num gosti di mum que vai caçá sua turmis! Quem manda na minha terra sou Euzis! Sapien in monti palavris qui num significa nadis i pareci latim. Copo furadis é disculpa de bebadis, arcu quam euismod magna.
 
-<article id="article1">
+<article id="1">
 
 ## Lorem ipsum dolor sit amet
 
@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article2">
+<article id="2">
 
 ## Lorem ipsum dolor sit amet
 
@@ -42,7 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero,
 
 </article>
 
-<article id="article3">
+<article id="3">
 
 ## Lorem ipsum dolor sit amet
 
