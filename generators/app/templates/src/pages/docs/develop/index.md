@@ -1,12 +1,12 @@
 ---
 title: "Develop"
-description: "Develop description"
+description: "Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mé, boa gente num é."
 layout: "guide"
 icon: "code-file"
 weight: 2
 ---
 
-###### Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mé, boa gente num é.
+###### {$page.description}
 
 <article id="1">
 

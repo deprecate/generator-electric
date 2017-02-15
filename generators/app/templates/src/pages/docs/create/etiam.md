@@ -1,11 +1,11 @@
 ---
 title: "Etiam Cursus"
-description: "Etiam Cursus description"
+description: "Quem num gosti di mum que vai caçá sua turmis! Quem manda na minha terra sou Euzis! Sapien in monti palavris qui num significa nadis i pareci latim. Copo furadis é disculpa de bebadis, arcu quam euismod magna."
 layout: "guide"
 weight: 2
 ---
 
-###### Quem num gosti di mum que vai caçá sua turmis! Quem manda na minha terra sou Euzis! Sapien in monti palavris qui num significa nadis i pareci latim. Copo furadis é disculpa de bebadis, arcu quam euismod magna.
+###### {$page.description}
 
 <article id="1">
 

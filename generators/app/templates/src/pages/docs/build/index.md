@@ -1,12 +1,12 @@
 ---
 title: "Build"
-description: "Build description"
+description: "Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Suco de cevadiss deixa as pessoas mais interessantiss. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum."
 layout: "guide"
 icon: "hammer"
 weight: 3
 ---
 
-###### Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Suco de cevadiss deixa as pessoas mais interessantiss. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
+###### {$page.description}
 
 <article id="1">
 

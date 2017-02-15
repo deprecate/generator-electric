@@ -1,11 +1,11 @@
 ---
 title: "Nulla Eget"
-description: "Nulla Eget description"
+description: "Viva Forevis aptent taciti sociosqu ad litora torquent Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Pra lá , depois divoltis porris, paradis. Delegadis gente finis, bibendum egestas augue arcu ut est."
 layout: "guide"
 weight: 3
 ---
 
-###### Viva Forevis aptent taciti sociosqu ad litora torquent Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Pra lá , depois divoltis porris, paradis. Delegadis gente finis, bibendum egestas augue arcu ut est.
+###### {$page.description}
 
 <article id="1">
 
