@@ -26,6 +26,9 @@
     "url": "https://github.com/wedeploy/generator-electric/issues"
   },
   "homepage": "http://electricjs.com",
+  "publishConfig": {
+    "tag": "alpha"
+  },
   "dependencies": {
     "chalk": "^1.1.3",
     "lodash": "^4.17.2",
