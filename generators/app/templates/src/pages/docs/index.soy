@@ -13,7 +13,7 @@ description: "Everything you need to know to get started."
 		{param elementClasses: 'docs' /}
 		{param content kind="html"}
 			{call Sidebar.render}
-				{param section: $site.index.children[1] /}
+				{param section: $site.index.children['docs'] /}
 			{/call}
 
 			{call .topics data="all" /}
@@ -22,6 +22,7 @@ description: "Everything you need to know to get started."
 {/template}
 
 /**
+ * @param page
  * @param site
  */
 {template .topics}
@@ -65,7 +66,9 @@ description: "Everything you need to know to get started."
 				<div class="row">
 					<div class="col-md-13 col-md-offset-3 col-xs-16">
 						<div class="row">
-							{foreach $topic in $site.index.children[1].children}
+							{foreach $childId in $page.childIds}
+								{let $topic: $page.children[$childId] /}
+
 								{if not $topic.hidden}
 									<div class="col-md-6 col-xs-16">
 										<a class="topic radial-out" href="{$topic.url}">
