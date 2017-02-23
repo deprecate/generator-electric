@@ -9,8 +9,7 @@ const sass = require('gulp-sass');
 const marble = require('marble');
 
 electric.registerTasks({
-	gulp: gulp,
-	plugins: ['electric-marble-components']
+	gulp: gulp
 });
 
 // CSS -------------------------------------------------------------------------
