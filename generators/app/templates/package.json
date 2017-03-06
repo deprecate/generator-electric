@@ -3,7 +3,7 @@
   "name": "<%= projectId %>",
   "version": "0.0.0",
   "devDependencies": {
-    "electric-marble-components": "^2.0.0-alpha.0",
+    "electric-marble-components": "^2.0.0-alpha.6",
     "marble": "~2.4.0",
     "metal-toggler": "^2.0.0"
   }
