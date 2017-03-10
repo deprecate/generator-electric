@@ -5,16 +5,17 @@
  * @param site
  */
 {template .render}
-	<div class="main">
-		<main class="content main">
-			<div class="docs">
-				{call Sidebar.render}
-					{param section: $site.index.children['docs'] /}
-				{/call}
-				{call .guide data="all" /}
-			</div>
-		</main>
-	</div>
+	{call mainGuide.render data="all"}
+		{param content kind="html"}
+			{call topbar.render data="all"}
+					{param elementClasses: 'topbar-docs-main' /}
+			{/call}
+			{call Sidebar.render}
+				{param section: $site.index.children['docs'] /}
+			{/call}
+			{call .guide data="all" /}
+		{/param}
+	{/call}
 {/template}
 
 /**
