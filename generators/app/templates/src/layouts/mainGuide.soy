@@ -1,4 +1,4 @@
-{namespace main}
+{namespace mainGuide}
 
 /**
  * @param content
@@ -7,10 +7,9 @@
 {template .render}
 	<div class="{$elementClasses ?: 'main'}">
 		<main class="content">
-			{call topbar.render data="all"}
-				{param elementClasses: 'topbar-fixed' /}
-			{/call}
-			{$content}
+			<div class="docs">
+				{$content}
+			</div>
 		</main>
 	</div>
 {/template}
