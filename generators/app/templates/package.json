@@ -5,6 +5,7 @@
   "devDependencies": {
     "electric-marble-components": "^2.0.0-alpha.0",
     "marble": "~2.4.0",
+    "marble": "~2.6.0",
     "metal-toggler": "^2.0.0"
   }
 }
