@@ -6,32 +6,32 @@
 
 1. Make sure you have [node and npm](https://nodejs.org/en/download/) installed:
 
-	```sh
+```sh
 node -v && npm -v
-	```
+```
 
 2. Install our global dependencies:
 
-	```sh
+```sh
 [sudo] npm i -g gulp yo
-	```
+```
 
 3. Install our local dependencies:
 
-	```sh
+```sh
 npm i
-	```
+```
 
 ## Usage
 
 * Build the site, serve it locally, and watch for any changes:
 
-	```
+```
 gulp
-	```
+```
 
 * Deploy to production (send build files to `wedeploy` branch):
 
-	```
+```
 gulp deploy
-	```
+```
