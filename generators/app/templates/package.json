@@ -3,6 +3,7 @@
   "name": "<%= projectId %>",
   "version": "0.0.0",
   "devDependencies": {
+    "electric-code-tabs": "^1.0.0-alpha.3",
     "electric-marble-components": "alpha",
     "marble": "~2.7.0",
     "metal-toggler": "^2.0.0"
