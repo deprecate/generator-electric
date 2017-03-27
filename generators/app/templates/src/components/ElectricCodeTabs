@@ -1,0 +1,5 @@
+import 'electric-code-tabs';
+
+document.addEventListener('DOMContentLoaded', function() {
+  new metal.ElectricCodeTabs();
+});
