@@ -19,6 +19,11 @@ var hi = function() {
 	console.log('Hello, World!');
 };
 ```
+```css
+.hi:before {
+	content: 'Hello, World';
+}
+```
 
 Nunc eros risus, scelerisque sit amet magna at, venenatis mattis metus. Pellentesque scelerisque facilisis sagittis. Integer at eleifend urna, nec vehicula nibh. Morbi a fermentum purus. Mauris augue erat, consectetur quis massa ac, commodo vehicula augue. Cras in odio volutpat, maximus nunc eleifend, scelerisque erat. In hac habitasse platea dictumst.
 
