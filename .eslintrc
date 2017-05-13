@@ -1,0 +1,15 @@
+{
+  "extends": ["liferay"],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "indent": ["error", "tab"],
+    "prefer-rest-params": 0,
+    "quotes": ["error", "single"],
+    "require-jsdoc": 1,
+    "valid-jsdoc": 1
+  }
+}
