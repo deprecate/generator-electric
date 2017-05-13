@@ -1,17 +1,16 @@
 'use strict';
 
-var _ = require('lodash');
-var chalk = require('chalk');
-var updateNotifier = require('update-notifier');
-var yeoman = require('yeoman-generator');
+let _ = require('lodash');
+let updateNotifier = require('update-notifier');
+let yeoman = require('yeoman-generator');
 
 module.exports = yeoman.Base.extend({
 	initializing: function() {
-		var pkg = require('../../package.json');
+		let pkg = require('../../package.json');
 
 		this.pkg = pkg;
 
-		var notifier = updateNotifier({
+		let notifier = updateNotifier({
 			pkg: pkg,
 			updateCheckInterval: 1000 * 60 * 60 * 12
 		});
@@ -33,7 +32,10 @@ module.exports = yeoman.Base.extend({
 			this.template('electric.config.js', 'electric.config.js', this);
 			this.template('gulpfile.js', 'gulpfile.js', this);
 			this.template('README.md', 'README.md', this);
-			this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
+			this.fs.copy(
+				this.templatePath('gitignore'),
+				this.destinationPath('.gitignore')
+			);
 		},
 
 		projectfiles: function() {
@@ -44,7 +46,7 @@ module.exports = yeoman.Base.extend({
 	},
 
 	install: function() {
-		var skipInstall = this.options['skip-install'];
+		let skipInstall = this.options['skip-install'];
 
 		if (!skipInstall) {
 			this.installDependencies({
@@ -60,9 +62,9 @@ module.exports = yeoman.Base.extend({
 	},
 
 	_getPrompts: function() {
-		var user = this.user;
+		let user = this.user;
 
-		var prompts = [
+		let prompts = [
 			{
 				default: 'My Site',
 				message: 'What would you like to call your project?',
@@ -73,17 +75,17 @@ module.exports = yeoman.Base.extend({
 				default: function(answers) {
 					return _.kebabCase(_.deburr(answers.projectName || ''));
 				},
-				message: 'Would you like to use this as the project id? (determines folder name)',
+				message: 'Would you like to use this as the project id? (determines folder name)', // eslint-disable-line
 				name: 'projectId',
 				type: 'input'
 			},
 			{
 				default: function(answers) {
-					var done = this.async();
+					let done = this.async();
 
 					user.github.username(function(err, res) {
-						var username = res ? res : 'my-user';
-						var repository = username + '/' + answers.projectId;
+						let username = res ? res : 'my-user';
+						let repository = username + '/' + answers.projectId;
 
 						done(null, repository);
 					});
@@ -104,9 +106,8 @@ module.exports = yeoman.Base.extend({
 	},
 
 	_prompt: function() {
-		var done = this.async();
+		let done = this.async();
 
-		this.prompt(this._getPrompts())
-			.then(this._afterPrompt.bind(this, done));
+		this.prompt(this._getPrompts()).then(this._afterPrompt.bind(this, done));
 	}
 });
