@@ -2,6 +2,8 @@
 
 /**
  * @param section
+ * @param? navigationDepth
+ * @param? searchPlaceholder
  */
 {template .render}
 	<nav class="sidebar">
@@ -19,14 +21,15 @@
 				{call ElectricSearchAutocomplete.render}
 					{param maxResults: 3 /}
 					{param path: '/docs/' /}
-					{param placeholder: 'Search Docs' /}
+					{param placeholder: $searchPlaceholder ?: 'Search Docs' /}
 				{/call}
 			</div>
 
 			{call ElectricNavigation.render}
+				{param anchorVariant: 'sidebar' /}
+				{param depth: $navigationDepth /}
 				{param elementClasses: 'sidebar-list sidebar-list-1' /}
 				{param listItemClasses: 'sidebar-item' /}
-				{param anchorVariant: 'sidebar' /}
 				{param section: $section /}
 			{/call}
 		</div>
