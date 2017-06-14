@@ -30,7 +30,6 @@ module.exports = yeoman.Base.extend({
 		app: function() {
 			this.template('package.json', 'package.json', this);
 			this.template('electric.config.js', 'electric.config.js', this);
-			this.template('gulpfile.js', 'gulpfile.js', this);
 			this.template('README.md', 'README.md', this);
 			this.fs.copy(
 				this.templatePath('gitignore'),
