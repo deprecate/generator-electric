@@ -32,10 +32,10 @@
 		<div class="content">
 			{$content}
 		</div>
+		{call SocialButton.render data="all"}
+			{param siteUrl: $siteUrl /}
+		{/call}
 	</article>
-	{call SocialButton.render data="all"}
-		{param siteUrl: $siteUrl /}
-	{/call}
 {/template}
 
 /**
