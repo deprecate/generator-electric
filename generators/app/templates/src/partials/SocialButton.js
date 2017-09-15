@@ -7,7 +7,7 @@ import Toggler from 'metal-toggler';
 import templates from './SocialButton.soy';
 
 class SocialButton extends Component {
-    created() {
+    rendered() {
         this.siteUrl = window.location.origin;
     }
 };
