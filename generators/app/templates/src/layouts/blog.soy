@@ -1,7 +1,9 @@
 {namespace blog}
 
 /**
- *
+ * @param page
+ * @param site
+ * @param siteUrl
  */
 {template .render}
 	{call main.render data="all"}
@@ -17,6 +19,7 @@
 /**
  * @param content
  * @param page
+ * @param siteUrl
  */
 {template .mainPost}
 	<article class="container">
@@ -30,6 +33,9 @@
 			{$content}
 		</div>
 	</article>
+	{call SocialButton.render data="all"}
+		{param siteUrl: $siteUrl /}
+	{/call}
 {/template}
 
 /**
