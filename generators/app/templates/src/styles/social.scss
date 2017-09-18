@@ -1,0 +1,69 @@
+@import "templates/blog";
+
+///////////////////////////SOCIAL///////////////////////////
+$facebook-color: #38589a;
+$twitter-color: #27aae5;
+$linkedin-color: #007ab7;
+
+.social {
+	text-align: center;
+	margin-top: 96px;
+	margin-bottom: 144px;
+
+	.social-banner {
+		margin-bottom: 12px;
+		height: 30px;
+		line-height: 30px;
+
+		.social-banner-title {
+			font-family: $font-primary;
+			font-size: $font-h6;
+			font-weight: bold;
+
+		}
+	}
+
+	.social-buttons {
+		.social-button {
+			@include anim(background-color);
+			display: inline-block;
+			margin-right: 24px;
+			height: 48px;
+			width: 48px;
+			border-bottom: none;
+			border-radius: 50%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&.facebook {
+				background-color: $facebook-color;
+
+				&:hover {
+					background-color: rgba($facebook-color, .8);
+				}
+			}
+
+			&.twitter {
+				background-color: $twitter-color;
+				&:hover {
+					background-color: rgba($twitter-color, .8);
+				}
+			}
+
+			&.linkedin {
+				background-color: $linkedin-color;
+				&:hover {
+					background-color: rgba($linkedin-color, .8);
+				}
+			}
+
+			span {
+				font-size: 2rem;
+				color: #FFFFFF;
+				line-height: 48px;
+			}
+		}
+	}
+}
