@@ -4,14 +4,14 @@ import Component from 'metal-component';
 import Soy from 'metal-soy';
 import Toggler from 'metal-toggler';
 
-import templates from './SocialButton.soy';
+import templates from './SocialButtons.soy';
 
-class SocialButton extends Component {
+class SocialButtons extends Component {
     rendered() {
         this.siteUrl = window.location.origin;
     }
 };
 
-Soy.register(SocialButton, templates);
+Soy.register(SocialButtons, templates);
 
-export default SocialButton;
+export default SocialButtons;
