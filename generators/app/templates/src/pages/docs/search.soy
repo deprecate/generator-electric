@@ -15,6 +15,7 @@ hidden: true
 		{param content kind="html"}
 			{call Sidebar.render}
 				{param section: $site.index.children['docs'] /}
+				{param site: $site /}
 			{/call}
 
 			<div class="sidebar-offset">
@@ -29,6 +30,7 @@ hidden: true
 						<div class="container-hybrid">
 							{call ElectricSearch.render}
 								{param action: '/docs/search.html' /}
+								{param dataURL: ($site.basePath ?: '') + '/site.json' /}
 								{param path: '/docs/' /}
 								{param placeholder: 'Search Docs' /}
 							{/call}

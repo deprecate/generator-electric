@@ -13,6 +13,7 @@
 				{/call}
 				{call Sidebar.render}
 					{param section: $site.index.children['docs'] /}
+					{param site: $site /}
 				{/call}
 				{call .guide data="all" /}
 			</div>
