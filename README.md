@@ -19,7 +19,7 @@ npm i -g generator-electric
 ## Development
 
 ```
-npm link -g generator-electric
+npm link
 ```
 
 ## Run
