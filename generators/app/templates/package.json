@@ -2,7 +2,11 @@
   "private": true,
   "name": "<%= projectId %>",
   "version": "0.0.0",
+  "scripts": {
+    "start": "electric"
+  },
   "devDependencies": {
+    "electric-cli": "^2.2.0",
     "electric-marble-components": "^2.0.0",
     "marble": "~2.12.6",
     "metal-toggler": "^2.0.0"
