@@ -29,8 +29,10 @@
 {template .menu}
 	{call ElectricNavigation.render}
 		{param depth: 1 /}
-		{param elementClasses: 'topbar-list' /}
+		{param elementClasses: 'topbar-menu' /}
+		{param togglerClasses: 'topbar-toggle' /}
 		{param linkClasses: 'topbar-link' /}
+		{param listClasses: 'topbar-list' /}
 		{param listItemClasses: 'topbar-item' /}
 		{param section: $site.index /}
 	{/call}
