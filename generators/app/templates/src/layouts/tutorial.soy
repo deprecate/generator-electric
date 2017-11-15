@@ -35,6 +35,12 @@
 		{call Topbar.render data="all" /}
 
 		<div class="container">
+			<h6 class="tutorial-title">
+				{$site.index.children['tutorials'].children[$page.parentId].tutorialTitle}
+			</h6>
+			<p class="tutorial-time-remaining">
+				<span class="icon icon-16-clock"></span> 4 min 40 sec
+			</p>
 			<div class="container-blog card">
 				{$content}
 				{call .footerButtons }
@@ -71,7 +77,7 @@
 	<div class="sidebar-navigation">
 		<nav class="sidebar">
 			{call ElectricNavigation.render}
-				{param elementClasses: 'sidebar-list' /}
+				{param listClasses: 'sidebar-list' /}
 				{param listItemClasses: 'sidebar-item' /}
 				{param anchorVariant: 'tutorial' /}
 				{param section: $page /}

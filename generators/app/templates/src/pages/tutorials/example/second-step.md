@@ -1,7 +1,7 @@
 ---
 title: "Step 2"
 description: "Foo bar."
-parentId: "tutorial"
+parentId: "example"
 layout: "tutorial"
 time: 90
 weight: 2

@@ -2,7 +2,7 @@
 title: "Step 1"
 description: "Foo bar."
 buttonTitle: "I did step 1"
-parentId: "tutorial"
+parentId: "example"
 layout: "tutorial"
 time: 90
 weight: 1
